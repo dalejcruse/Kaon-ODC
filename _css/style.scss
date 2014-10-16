@@ -1,0 +1,742 @@
+@font-face {
+   font-family: Lepton;
+   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Helvetica Neue"), local("Roboto"), local("Roboto"), local(Helvetica), local(Arial);
+}
+@font-face {
+   font-family: Lepton;
+   font-weight: bold;
+   src: local("HelveticaNeue-Bold"), local("Helvetica Neue Bold"), local("Helvetica-Bold"), local("Helvetica Bold"), local("Roboto Bold"), local("Roboto-Bold"), local("Arial-BoldMT"), local("Arial Bold");
+}
+
+/* MIXINS */
+@mixin absolutely {
+	position: absolute;
+}
+@mixin blackish {
+	color: rgba(67, 67, 67, 0.9);
+}
+@mixin block {
+	display: block;
+}
+@mixin center {
+	text-align: center;
+}
+@mixin float {
+	float: left;
+}
+@mixin height {
+	height: 768px;
+}
+@mixin normal {
+	font-weight: normal;
+}
+@mixin rounded-corners ($radius: 4px) {
+  border-radius: $radius;
+}
+@mixin redgradient {
+	background-image: -webkit-linear-gradient(top, rgba(254, 2, 2, 0.9), rgba(193, 2, 2, 0.9));
+}
+@mixin redgradientover {
+	background-image: -webkit-linear-gradient(top, rgba(169, 0, 0, 0.9), rgba(166, 1, 1, 0.9));
+}
+@mixin accordionTextBase ($size: 13px) {
+	font-size: $size;
+	line-height: $size * 1.4;
+}
+@mixin textbase ($size: 14px) {
+	font-size: $size;
+	line-height: $size * 1.4;
+}
+@mixin upper {
+	text-transform: uppercase;
+}
+@mixin width {
+	width: 1024px;
+}
+
+/* VARIABLES */
+$blackish: rgba(67, 67, 67, 0.9);
+$accordionGridUnit: 18.2px; /* accordion.textbase size * golden ratio */
+$gridUnit: 19.6px; /* .textbase size * golden ratio */
+$navborder: 2px solid rgba(224, 0, 0, 0.9);
+$red: rgba(255, 0, 0, 0.9);
+$white: rgba(255, 255, 255, 0.9);
+
+/* STYLES */
+body { 
+	font-family: Lepton;
+	@include height; 
+	margin: 0;
+	@include textbase;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	@include width; 
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+}
+#body {
+	@include absolutely;
+	@include height; 
+	left: 0;
+	overflow: hidden;
+	top: 0;
+	@include width;
+	z-index: 1;
+}
+.main {
+	height: 688px;
+	overflow: hidden;
+	@include width;
+	.content {
+		@include absolutely;
+		background-color: $blackish;
+		@include block;
+		bottom: 60px;
+		@include center;
+		color: $white;
+		max-width: 482px;
+		padding: $gridUnit $gridUnit * 2;
+		@include rounded-corners;
+		z-index: 1;
+	}
+	.slide1 .content {
+    	margin-left: 178.5px;
+	}
+	.slide2 .content {
+    	margin-left: 186.25px;
+	}	
+	.slide3 .content {
+    	margin-left: 106.5px;
+	}
+	.slide4 .content {
+	}
+	.slide5 .content {
+    	margin-left: 83px;
+	}
+	.slide6 .content {
+    	margin-left: 103px;
+	}
+	.slide7 .content {
+    	margin-left: 114.5px;
+	}
+	.slide8 .content {
+    	margin-left: 96px;
+	}
+	.slide9 .content {
+    	margin-left: 140px;
+	}
+	.slide10 .content {
+    	margin-left: 62.5px;
+	}
+	.slide11 .content {
+    	margin-left: 136px;
+	}
+	.slide12 .content {
+    	margin-left: 61.5px;
+	}
+	.slide13 .content {
+    	margin-left: 173.5px;
+	}
+	.slide14 .content {
+    	margin-left: 110px;
+	}
+	.altcontent {
+		@include absolutely;
+		background-color: $white;
+		@include block;
+		padding: $gridUnit;
+		right: $gridUnit;
+		@include rounded-corners;
+		top: $gridUnit;
+		width: 331px;
+		.button {
+			margin-bottom: 10px;
+			width: 290px;
+		}
+		p {
+			background-color: $white;
+			@include blackish;
+			margin-bottom: $gridUnit;
+		}
+	}
+	.animationSidebar {
+		border-right: 20px solid rgba(255, 255, 255, 1);
+		@include float;
+		@include height;
+		width: 331px;
+	}
+	.royalSlider {
+		@include float;
+		height: 688px;
+		overflow: hidden;
+		width: 673px;
+	}
+	.noRightBorder {
+		border-right: none;
+	}
+	.slide4 .content {
+		margin-left: 69px;
+	}
+}
+.index {
+	background-image: url(../_img/cityscape.jpg);
+}
+footer {
+	@include absolutely;
+	background: rgba(255, 0, 0, 1) url(../_img/footerLogo.png) no-repeat right bottom;
+	bottom: 0;
+	height: 80px;
+	-webkit-transform: translate3d(0, 0, 0);
+	@include width;
+	z-index: 2;
+	.button {
+		@include float;
+		margin: $gridUnit $gridUnit 0 $gridUnit;
+	}
+}
+.footerSlider {
+	font-weight: bold;
+	width: 80%;
+}
+.footerTitle {
+	@include absolutely;
+	background-color: rgba(255, 0, 0, 1);
+	border-radius: 4px 4px 0 0;
+	border-left: $navborder;
+	border-top: $navborder;
+	border-right: $navborder;
+	@include center;
+	color: $white;
+	margin: -10px 0 0 400px;
+	padding: $gridUnit 44px 0 44px;
+	@include upper;
+	width: 137px;
+}
+.storyNavigation {
+	background: $red url(../_img/footerNavArrowUp.png) no-repeat center 10px;
+	display: inline;
+	padding-top: $gridUnit;
+}
+.footerTitle > .close {
+	background: $red url(../_img/footerNavArrowDown.png) no-repeat center bottom; 
+	display: none;
+	padding-bottom: 10px;
+}
+nav, p {
+	animation-delay: .1s;
+	animation-fill-mode: both;
+    transition: all .01s ease-in-out;
+}
+nav {
+	display: none;
+	height: 237px;
+	margin-left: $gridUnit;
+	width: 100%;
+}
+dl {
+	background-color: $red;
+	color: $white;
+	@include float;
+	margin-top: 40px;
+	width: 33%;
+}
+dt {
+	background: url(../_img/footerArrow.png) no-repeat;
+	line-height: 22px;
+	margin-bottom: 13px;
+	padding-left: 32px;
+	@include upper;
+}
+dd {
+	border: $navborder;
+	font-weight: bold;
+	margin: 0 0 7px $gridUnit;
+	padding: $gridUnit / 2;
+	@include redgradient;
+	@include rounded-corners;
+	width: 192px;
+	a {
+		@include block;
+	}
+}
+.button {
+	border: $navborder;
+	@include center;
+	font-weight: bold;
+	padding: 10px $gridUnit;
+	@include redgradient;
+	@include rounded-corners;
+	@include upper;
+}
+.redgradientover {
+	@include redgradientover;
+}
+h2 {
+	@include blackish;
+	font-size: 15px;
+	margin-bottom: $gridUnit;
+	@include upper;
+	span {
+		@include normal;
+	}
+}
+h3 {
+	@include center;
+	margin-bottom: $gridUnit * 4;
+	@include normal;
+}
+@-webkit-keyframes city {
+	0% {
+	   top: 0;
+	}
+	100% {
+	   top: 100px;
+	}       
+}
+@-webkit-keyframes map {
+	0% {
+	   zoom: 1;
+	}
+	100% {
+	   zoom: 2;
+	}       
+}
+@-webkit-keyframes cityReverse {
+	0% {
+	   top: 100px;
+	}
+	100% {
+	   top: 0px;
+	}       
+}
+@-webkit-keyframes mapReverse {
+	0% {
+	   zoom: 2;
+	}
+	100% {
+	   zoom: 1;
+	}       
+}
+.move {
+    background: url(../_img/cityscapeMapSpline.jpg) no-repeat;
+    display: block;
+    @include height;
+    -webkit-animation-delay: 30.5s; 
+	-webkit-animation-duration: 3.2s;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: map;
+	img {
+	   position: absolute;
+    	-webkit-animation-delay: 22s; 
+    	-webkit-animation-duration: 3.2s;
+    	-webkit-animation-fill-mode: both;
+    	-webkit-animation-name: city;
+	}
+}
+.moveReverse {
+    background: url(../_img/cityscapeMapSpline.jpg) no-repeat;
+    display: block;
+    @include height;
+    -webkit-animation-delay: 2.2s; 
+	-webkit-animation-duration: 3.2s;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: mapReverse;
+	img {
+	   position: absolute;
+    	-webkit-animation-delay: 3.05s; 
+    	-webkit-animation-duration: 3.2s;
+    	-webkit-animation-fill-mode: both;
+    	-webkit-animation-name: cityReverse;
+	}
+}
+@-webkit-keyframes bloopstory {
+	0% { 
+		opacity: 0;
+	}
+	3%, 100% { 
+		opacity: 1;
+	}
+}
+.bloopstory {
+	@include absolutely;
+	background-color: $white;
+	@include blackish;
+	@include center;
+	font-size: 12px;
+	line-height: 16.8px;
+	opacity: 0;  
+	padding: 8px;
+	@include rounded-corners;
+	-webkit-animation-duration: 22.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-name: bloopstory; 
+	-webkit-animation-timing-function: linear;
+	 -webkit-transform-origin: -20px -20px;
+	-webkit-transition: opacity 0 ease-in-out;
+	width: 135px;
+}	
+@-webkit-keyframes bloops {
+	0%, 24%, 100% { 
+		opacity: 0;
+	}
+	4%, 12% { 
+		opacity: 1;
+	}
+}
+.bloop {
+	@include absolutely;
+	background-color: $white;
+	@include blackish;
+	@include center;
+	font-size: 12px;
+	line-height: 16.8px;
+	opacity: 0;  
+	padding: 8px;
+	@include rounded-corners;
+	-webkit-animation-duration: 22.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: bloops; 
+	-webkit-animation-timing-function: linear;
+	 -webkit-transform-origin: -20px -20px;
+	-webkit-transition: opacity 0 ease-in-out;
+	width: 135px;
+	b {
+		display: block;
+		@include upper;
+	}
+}
+.bloop1 {
+	@include absolutely;
+	background-color: $white;
+	@include blackish;
+	@include center;
+	font-size: 12px;
+	line-height: 16.8px;
+	opacity: 0;  
+	padding: 8px;
+	@include rounded-corners;
+	-webkit-animation-duration: 22.5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-name: bloops; 
+	-webkit-animation-timing-function: linear;
+	 -webkit-transform-origin: -20px -20px;
+	-webkit-transition: opacity 0 ease-in-out;
+	width: 135px;
+	b {
+		display: block;
+		@include upper;
+	}
+}
+.bloop::after, .bloopstory::after, .bloop1::after {
+	@include absolutely;
+	border: solid transparent;
+	border-top-color: $white;
+	border-width: 12px;
+	content: "";
+	left: 45%;
+	top: 100%;
+}
+@-webkit-keyframes bloop_meter {
+	0%, 100% {
+		width: 0;
+	}
+    30% {
+    	width: 90%;
+    }
+    60%, 99% {
+    	width: 100%;
+    }
+}
+.bloop .meter, .bloopstory .meter, .bloop1 .meter {
+	background: rgba(222, 220, 220, 0.9);
+	border: 1px solid rgba(222, 220, 220, 0.6);
+	height: 6px;
+	margin: 10px auto;
+	@include rounded-corners;
+	width: 110px;
+}
+.meter .bar {
+	border: 1px solid rgba(255, 0, 0, 0.6);
+	display: block;
+	height: 4px;
+	@include redgradient;
+	@include rounded-corners;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: bloop_meter; 
+	-webkit-animation-timing-function: linear;
+	 -webkit-transform-origin: -20px -20px;
+	-webkit-transition: opacity 0 linear;
+	width: 10%;
+}
+@-webkit-keyframes instructions {
+	0%, 50% { 
+		opacity: 1;
+	}
+	100% { 
+		opacity: 0;
+	}
+}
+.instructions {
+	@include absolutely;
+	background-color: $blackish;
+	color: $white;
+	padding: 10px;
+	right: 10px;
+	@include rounded-corners;
+	top: 10px;
+	-webkit-animation-duration: 4.8s;
+	-webkit-animation-fill-mode: forwards; 
+	-webkit-animation-name: instructions; 
+	-webkit-animation-timing-function: linear;
+	 -webkit-transform-origin: -20px -20px;
+	-webkit-transition: opacity .25s ease-in-out;
+	z-index: 9;
+}
+h5 {
+	margin-bottom: 9.8px;
+	@include upper;
+}
+#play, #pause {
+	border-style: solid;
+	text-indent: -9999px;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#play {
+	border-color: transparent transparent transparent $white;
+	border-width: 8px 0 8px 12px;
+	height: 1px;
+}
+#pause {
+	border-color: transparent $white;
+	border-width: 0 4px 0;
+	height: 17px;
+	width: 4px;
+}
+a.refresh {
+    @include absolutely;
+    background-color: $red;
+    border: 1px solid $white;
+    bottom: 17px;
+    color: $white;
+    @include center;
+    display: none;
+    left: 30px;
+    padding: 0.5em 1em;
+    @include rounded-corners;
+    @include upper;
+    z-index: 9;
+}
+.update {
+    background-color: $red;
+    border: 1px solid $white;
+    border-radius: 1em;
+    color: $white;
+    float: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: -$gridUnit;
+    width: $gridUnit;
+}
+.animationSidebarUpper {
+	height: 335px;
+}
+.animationSidebarLower {
+	border-top: 20px solid $white;
+}
+.accordion {
+	@include absolutely;
+	@include accordionTextBase;
+	background-color: white;
+	height: 671px;
+	left: 515px;
+	padding: $accordionGridUnit;
+	-webkit-hyphens: auto;
+	width: 476.2px;
+	h1 {
+		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left top;
+		color: $blackish;
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 25.2px;
+		padding-left: 32px;
+	}
+	.single {
+		background: none;
+		color: $red;
+		cursor: default;
+		font-weight: bold;
+		padding-left: 0;
+	}
+	h2 {
+		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left top;
+		color: $blackish;
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 28.4px;
+		margin-bottom: $accordionGridUnit;
+		padding-left: 32px;
+		@include upper;
+	}
+	h1.active, h2.active {
+		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left bottom;
+		color: $red;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	.accordionInner {
+		background-color: rgba(238, 236, 236, 0.9);
+		margin: $accordionGridUnit 0;
+		padding: $accordionGridUnit;
+		@include rounded-corners;
+		.accordionInnerWrapper {
+			border-bottom: 3px solid #000;
+			margin-bottom: $accordionGridUnit;
+		}
+		p, ul {
+			@include accordionTextBase;
+			color: rgba(71, 71, 71, 0.9);
+			margin-bottom: $accordionGridUnit;
+		}
+		ul {
+			margin-left: $accordionGridUnit;
+			li {
+    			padding-bottom: 5px;
+			}
+		}
+		.assets {
+			list-style: none;
+			margin-left: 0;
+			li {
+				padding: 5px;
+				a {
+					color: $blackish;
+				}
+			}
+			li:nth-of-type(odd) {
+				background-color: $white;
+			}
+		}
+		.inner {
+			display: none;
+			padding: 0 16px 0 32px;
+		}
+	}
+	.multiple {
+    	font-weight: bold;
+	}
+}	
+.accordionInner:first-child {
+	display: block;
+}
+.multiple .accordionInner, .hide {
+	display: none;
+}
+#cube {
+	h2.title {
+		@include absolutely;
+		left: 143px;
+		top: $gridUnit * 2;
+	}
+	h3.title {
+		@include absolutely;
+		left: 96px;
+		top: $gridUnit * 4;
+	}
+	.cube1 {
+		@include redgradientover;
+	}
+	.play {
+		display: none;
+	}
+}
+#story .story {
+	@include redgradientover;
+}
+.float {
+	@include float;
+}
+@-webkit-keyframes yield {
+	0%, 100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}        
+}
+.yield {
+	@include absolutely;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: yield;
+	-webkit-animation-timing-function: linear;
+	-webkit-transform-origin: -20px -20px;
+}
+.yieldone {
+	left: 147px;
+	top: 111px;
+}
+.yieldtwo {
+	left: 251px;
+	top: 263px;
+}
+.border {
+    border-bottom: 1px solid rgba(220, 218, 218, 0.9);
+    margin-bottom: $accordionGridUnit /2;
+}
+.one, .one .bar {
+	-webkit-animation-delay: 0s;
+}
+.two, .two .bar {
+	-webkit-animation-delay: 1.5s;
+}
+.three, .three .bar {
+	-webkit-animation-delay: 3s;
+}
+.four, .four .bar {
+	-webkit-animation-delay: 4.5s;
+}
+.five, .five .bar {
+	-webkit-animation-delay: 6s;
+}
+.six, .six .bar {
+	-webkit-animation-delay: 7.5s;
+}
+.seven, .seven .bar {
+	-webkit-animation-delay: 9s;
+}
+.eight, .eight .bar {
+	-webkit-animation-delay: 10.5s;
+}
+.nine, .nine .bar {
+	-webkit-animation-delay: 12s;
+}
+.ten, .ten .bar {
+	-webkit-animation-delay: 13.5s;
+}
+.eleven, .eleven .bar {
+	-webkit-animation-delay: 15s;
+}
+.twelve, .twelve .bar {
+	-webkit-animation-delay: 16.5s;
+}
+.thirteen, .thirteen .bar {
+	-webkit-animation-delay: 18s;
+}
+.fourteen, .fourteen .bar {
+	-webkit-animation-delay: 19.5s;
+}
+.fifteen, .fifteen .bar {
+	-webkit-animation-delay: 21s;
+}

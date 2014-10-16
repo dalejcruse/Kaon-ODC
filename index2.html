@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Oracle Optimized Data Center</title>
+		<meta name="description" content="">
+		<meta name="author" content="Dale Cruse, for Kaon Interactive">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="_css/html5-doctor-reset-stylesheet.css">
+		<link rel="stylesheet" href="_css/style.css">
+		<link rel="stylesheet" href="_css/bloops.css">
+	</head>
+	<body onload='onLoad(), startStory(); return false;' class="body1024x768">
+		<div id="body">
+		<div  class="move"><img src="_img/cityscapeTransition.png" alt="cityscapeTransition" width="1024" height="768"></div>
+			<div class="main">
+				<a class="refresh" id="refresh" href="#" onclick="lepton.updateContent(); return false;">Update&nbsp;Available<span class="update">!</span></a>
+				<div class="bloop1 one">
+					<b>BUSINESS ANALYTICS</b>             
+					Capturing New Opportunities
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 two">
+					<b>BIG DATA</b>             
+					Visualizing<br>Complex<br>Data Sets
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 three">
+					<b>CUSTOMER EXPERIENCE</b>
+					Differentiating<br>Across Customer<br>Interactions
+					<div class="meter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop1 four">
+					<b>ENTERPRISE<br>CONTENT<br>MANAGEMENT</b>
+					Managing Content<br>Lifecycle
+					<div class="meter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop1 five">
+					<b>FINANCIAL<br>MANAGEMENT</b>
+					Managing Business<br>Performance
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 six">
+					<b>GOVERNANCE, RISK<br>AND COMPLIANCE</b>
+					Monitoring Through<br>Unified Intelligence
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop seven">
+					<b>HUMAN CAPITAL<br>MANAGEMENT</b>
+					Managing Transactions,<br>Workforce Services
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 eight">
+					<b>INDUSTRY<br>APPLICATIONS</b>
+					Addressing Complex<br>Business Processes
+					<div class="meter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop nine">
+					<b>PROCUREMENT</b>
+					Managing<br>"Source-to-Settle"<br>Processes
+					<div class="meter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop1 ten">
+					<b>PRODUCT LIFECYCLE<br>MANAGEMENT</b>
+					Managing Complete<br>Product Lifecycle
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 eleven">
+					<b>PROJECT PORTFOLIO<br>MANAGEMENT</b>
+					Managing for Optimal<br>Resource Mix
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 twelve">
+					<b>SERVICE-ORIENTED<br>ARCHITECTURE</b>
+					Providing Integration<br>Business-to-Business
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+				<div class="bloop1 thirteen">
+					<b>SUPPLY CHAIN<br>MANAGEMENT</b>
+					Transforming Supply<br>Chains into Value Chains
+					<div class="meter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop1 fourteen">
+					<b>SUSTAINABILITY</b>
+					Monitoring Benefit<br>Flow to People,<br>Planet, Profits
+					<div class="meter fourteenMeter"><span class="bar"></span></div>
+				</div> 
+				<div class="bloop1 fifteen">
+					<b>ENTERPRISE<br>SOCIAL SYSTEM</b>
+					Engaging with the<br>Enterprise Ecosystem
+					<div class="meter"><span class="bar"></span></div>
+				</div>
+			</div>
+			<footer>
+				<div class='footerSlider'>
+					<div class='footerTitle'>
+						<span class='storyNavigation'>Story Navigation</span>
+						<span class='close'>Close</span>
+					</div>
+					<nav>
+						<dl>
+							<dt></dt>
+							<dd><a href='index.html'>Home</a></dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd class='story'><a href='index2.html'>The Journey to Optimization</a></dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd class='cube1'><a href='cube.html'>Your Data Center, Optimized</a></dd>
+						</dl>
+					</nav>
+				</div>
+			</footer>
+		</div>
+		<script src="_js/jqueryFreshest.min.js"></script>
+		<script src="_js/footer.min.js"></script>
+		<script src="_js/lepton.js"></script>
+		<script>
+			function onLoad() {
+				lepton = new Lepton(true,"0.867 0.867 0.867");
+					lepton.setEventHandler("updateAvailable", function () {
+              		  $(".refresh").css("display","block");
+              		});
+                                 // Fade in background loop
+                                 lepton.audioCreate("bg", "_audio/bg.m4a");
+                                 lepton.audioVolume("bg", 0, 0);
+                                 lepton.audioVolume("bg", 1, 1);
+                                 lepton.audioPlay("bg", true);
+				  // Create the voiceover, but don't do anything yet
+				  lepton.audioCreate("voiceover", "_audio/new.m4a");
+				  if (location.href.replace(/^.*#/,'') == "play") {
+    				  startStory();
+    				  }
+			}
+			function startStory() {
+				$("#introText").fadeOut(1000); // Fade out the buttons, so we cannot be restarted
+				lepton.audioSeek("voiceover", 0, true); // Start playing from the beginning
+				lepton.audioSeek("bg", 0, false); // Fade out background?
+				setTimeout("location.href='story.html'", 42000); // Jump to the story after a while (change 18000 to the right number)
+			}
+		</script>
+		<script>document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });</script>
+	</body>
+</html>

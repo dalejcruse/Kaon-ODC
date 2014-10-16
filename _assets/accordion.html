@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>jQuery Examples</title>
+<META NAME="Description" CONTENT="Various examples of jQuery that you may find helpful. The best way to learn is to create your very own!">
+<META NAME="Keywords" CONTENT="jQuery Examples">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+	<script>
+	$(document).ready(function() {
+	$('.accordion h1').eq(2).addClass('active');
+		$('.accordion p').eq(2).show();
+		$(".accordion h1").click(function(){
+			$(this).next("p").slideToggle("slow")
+			.siblings("p:visible").slideUp("slow");
+			$(this).toggleClass("active");
+			$(this).siblings("h1").removeClass("active");
+		});
+	});
+	</script>
+	
+	<style>
+		.accordion {width:400px; border:1px solid #ccc;}
+		.accordion p {padding: 10px 15px 20px; margin:0; display: none; background: #f7f7f7; }
+		.accordion h1 {padding: 7px 15px; margin:0; background: #e9e7e7 url('image/arrow-square.gif') no-repeat right -51px; border:1px solid #ccc; border-bottom:none;cursor: pointer;} 
+		.accordion h1.active {background-position: right 5px;}
+		#panel {width:301px; border:1px solid; display:none;}
+		.active {background-position: right 12px;}
+	</style>
+	
+	<div class="accordion">
+		<h1>Title Here</h1>
+		<p>The contents of your accordian can go here. Graphics, text, more elements or whatever you like can be placed in here. Try it for yourself!</p>
+	    <h1>Title Here</h1>
+		<p>The contents of your accordian can go here. Graphics, text, more elements or whatever you like can be placed in here. Try it for yourself!</p>
+	    <h1>Title Here</h1>
+		<p>The contents of your accordian can go here. Graphics, text, more elements or whatever you like can be placed in here. Try it for yourself!</p>
+	</div>
+</body>
+</html>
