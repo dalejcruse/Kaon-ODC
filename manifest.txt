@@ -5,7 +5,7 @@ new.m4a 84cb5cbe9a779f69410aca780f823e42
 bloops.css adac8ae0ab1238301120fdd4c45a8686
 bloops.scss b9c59d447c196ebcda16a405e4cb3440
 bloopsStory.css 91f41d5af25ae20fc1910117fe695a4e
-_css/bloopsStory.scss acd4228a74bee8bad265a23342a8bf10
+bloopsStory.scss acd4228a74bee8bad265a23342a8bf10
 _css/html5-doctor-reset-stylesheet.css 4c301a7e5dc4cfe60215676b748338f9
 _css/royalslider.css abb7670ae77bccc3654032d3514d9b8b
 _css/royalslider.scss 9d5811e251b44f4e7c2400115bf4afc7
