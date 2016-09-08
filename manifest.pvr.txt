@@ -10,7 +10,7 @@ html5-doctor-reset-stylesheet.css 4c301a7e5dc4cfe60215676b748338f9
 royalslider.css abb7670ae77bccc3654032d3514d9b8b
 royalslider.scss 9d5811e251b44f4e7c2400115bf4afc7
 style.css 1dc1b9f9420a433c7393ce0fabc87c3c
-_css/style.scss a91bbbf3b9d5815ae66d1b19f16cfd08
+style.scss a91bbbf3b9d5815ae66d1b19f16cfd08
 _img/buttonGrayPlusMinusMedium.png b53aa492cb679a3bb80d7c134834dc5a
 _img/cityscape.jpg 93d09aa672e2d83dd3bf355aebb327ca
 _img/cityscapeMap.png b45ef4c7f84c3fa0ecc3be129ff53d36
