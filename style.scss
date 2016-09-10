@@ -563,7 +563,7 @@ a.refresh {
 	-webkit-hyphens: auto;
 	width: 476.2px;
 	h1 {
-		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left top;
+		background: url(../buttonGrayPlusMinusMedium.png) no-repeat left top;
 		color: $blackish;
 		cursor: pointer;
 		font-size: 16px;
@@ -579,7 +579,7 @@ a.refresh {
 		padding-left: 0;
 	}
 	h2 {
-		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left top;
+		background: url(../buttonGrayPlusMinusMedium.png) no-repeat left top;
 		color: $blackish;
 		cursor: pointer;
 		font-size: 14px;
@@ -589,7 +589,7 @@ a.refresh {
 		@include upper;
 	}
 	h1.active, h2.active {
-		background: url(../_img/buttonGrayPlusMinusMedium.png) no-repeat left bottom;
+		background: url(../buttonGrayPlusMinusMedium.png) no-repeat left bottom;
 		color: $red;
 		font-weight: bold;
 		margin-bottom: 0;
