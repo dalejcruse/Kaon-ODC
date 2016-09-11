@@ -13,7 +13,7 @@ style.css 1dc1b9f9420a433c7393ce0fabc87c3c
 style.scss a91bbbf3b9d5815ae66d1b19f16cfd08
 buttonGrayPlusMinusMedium.png b53aa492cb679a3bb80d7c134834dc5a
 cityscape.jpg 93d09aa672e2d83dd3bf355aebb327ca
-_img/cityscapeMap.png b45ef4c7f84c3fa0ecc3be129ff53d36
+cityscapeMap.png b45ef4c7f84c3fa0ecc3be129ff53d36
 _img/cityscapeMapSpline.jpg 371b3bfd6331cbcba00fad0e6ff8e4d1
 _img/cityscapeTransition.png d286bee05fef228067672e78fb8738ea
 _img/cube.jpg 8788b2822d7a7693cd419bbf8b8ab56f
