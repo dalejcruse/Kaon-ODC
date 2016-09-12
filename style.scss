@@ -323,7 +323,7 @@ h3 {
 	}       
 }
 .move {
-    background: url(../_img/cityscapeMapSpline.jpg) no-repeat;
+    background: url(../cityscapeMapSpline.jpg) no-repeat;
     display: block;
     @include height;
     -webkit-animation-delay: 30.5s; 
@@ -339,7 +339,7 @@ h3 {
 	}
 }
 .moveReverse {
-    background: url(../_img/cityscapeMapSpline.jpg) no-repeat;
+    background: url(../cityscapeMapSpline.jpg) no-repeat;
     display: block;
     @include height;
     -webkit-animation-delay: 2.2s; 
