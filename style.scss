@@ -188,7 +188,7 @@ body {
 }
 footer {
 	@include absolutely;
-	background: rgba(255, 0, 0, 1) url(../_img/footerLogo.png) no-repeat right bottom;
+	background: rgba(255, 0, 0, 1) url(../footerLogo.png) no-repeat right bottom;
 	bottom: 0;
 	height: 80px;
 	-webkit-transform: translate3d(0, 0, 0);
