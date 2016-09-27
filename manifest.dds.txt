@@ -27,7 +27,7 @@ cubeVirtualMachine.jpg cb8326ecdd0cd21ce6653f309025f980
 footerLogo.png 0d65ed4d10f5038c16e4b835702cc302
 footerNavArrowDown.png f89b688988b4f15923bc4945bf53b7bd
 footerNavArrowUp.png 4911c19a265d01fd075625c3367496d6
-_img/story00.jpg d2b851d6536e4d4b0df9e9948292fece
+story00.jpg d2b851d6536e4d4b0df9e9948292fece
 _img/story00LL.jpg 29180341878e4fc5b6d7d903b0d9169e
 _img/story00LU.jpg 35e0d76a97f46f6345d7bbf347ad9482
 _img/story01.jpg 831faf69ce5444a9abace582e8641237
