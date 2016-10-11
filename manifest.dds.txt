@@ -41,7 +41,7 @@ story05.jpg 867bfb3dd6eb9ae5664b5952952fb03a
 story05L.jpg a08959297513abb4c8f05d1b594a5885
 story06.jpg ec7c4420a5f19dffbab4639e4591c7bb
 story06L.jpg a08959297513abb4c8f05d1b594a5885
-_img/story07.jpg ce9bfbf8402af34edcb8735c0e5d5ea3
+story07.jpg ce9bfbf8402af34edcb8735c0e5d5ea3
 _img/story07L.jpg a08959297513abb4c8f05d1b594a5885
 _img/story08.jpg bbb83f5ea7db79ec1fafc2dd550dc90e
 _img/story08L.jpg a08959297513abb4c8f05d1b594a5885
