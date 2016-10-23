@@ -53,7 +53,7 @@ story11.jpg 11f8c9698a8d2332f1f64fd69f9a9ca4
 story11L.jpg af3a1265fd44c6642f6089473d55428f
 story12.jpg 4b97f706c74ced931b59a7ba149aaa1b
 story12L.jpg 04b39cdf3fea273506db430419a0d77d
-_img/story13.jpg 91c85baddc75fa4fccbb25e2e78a3cb1
+story13.jpg 91c85baddc75fa4fccbb25e2e78a3cb1
 _img/story13L.jpg 04b39cdf3fea273506db430419a0d77d
 _img/yield.png ec993020ba13b45438c4c9d50023835a
 _js/accordionControls.js db5edfcd7cec59c4e94062d79cdb44bc
