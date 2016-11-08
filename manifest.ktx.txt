@@ -60,7 +60,6 @@ accordionControls.min.js e12d2d535f052b3f59d4f44990aac45b
 addJS.min.js 7170410694e384beb767ff05858c0ae5
 footer.min.js 0014e0c21089c8a9fa5dfeee031359bc
 footerContent.min.js c525afcbb33c543a85e94de12223deee
-_js/footerContentRaw.min.js 33b5dca7a2b4c64dadc59e2d1a5c5d57
 _js/imageMapCoordinates.js 9926f2149b82ae6f06c4c83b01365c95
 _js/imageMapCoordinates.min.js 9926f2149b82ae6f06c4c83b01365c95
 _js/jquery-1.8.0.min.js 077b5883c58688724b76a3ffe37f50d5
