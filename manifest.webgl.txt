@@ -64,7 +64,7 @@ imageMapCoordinates.min.js 9926f2149b82ae6f06c4c83b01365c95
 jquery.royalslider.min.js f8cb1a904021f0dee244a4b0bb2e9e02
  
 jquery.rs.autoplay.min.js 93ec30262e86d42eaad4b9698ae3993c
-_js/jqueryFreshest.min.js 1d14cd3798bc4d6aaf65dd625870723f
+jqueryFreshest.min.js 1d14cd3798bc4d6aaf65dd625870723f
 _js/lepton.js 43f3c130bf73fc6643e4aed61dbed661
 _js/lepton.min.js 90d9606b76471036b6291f7fb107b403
 build.command 4402f4b820b3ef592cf47ddc8387e287
