@@ -62,11 +62,11 @@ footer.min.js 0014e0c21089c8a9fa5dfeee031359bc
 footerContent.min.js c525afcbb33c543a85e94de12223deee
 imageMapCoordinates.min.js 9926f2149b82ae6f06c4c83b01365c95
 jquery.royalslider.min.js f8cb1a904021f0dee244a4b0bb2e9e02
- 
+
 jquery.rs.autoplay.min.js 93ec30262e86d42eaad4b9698ae3993c
 jqueryFreshest.min.js 1d14cd3798bc4d6aaf65dd625870723f
 lepton.js 43f3c130bf73fc6643e4aed61dbed661
-_js/lepton.min.js 90d9606b76471036b6291f7fb107b403
+
 build.command 4402f4b820b3ef592cf47ddc8387e287
 cube.html 5343015fc0a2840ea2f5fe07e0cf136f
 cubeEnterpriseManagement.html 33c90c094472b22a98725dc367053763
